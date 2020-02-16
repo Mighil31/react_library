@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    background-color: #333;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.label {
+    font-weight: bold;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.tag {
+    margin-bottom: 4px;
+        display: flexbox;
+    justify-content: space-around;
+}
+
+.bookCard {
+    width: 320px;
+    height: 420px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 80px;
+    margin: 15px;
+    padding: 8px;
+    background-color: rgb(143, 95, 95);
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.buttons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 15px;
+    padding: 5px 20px 20px 20px;
+}
+
+.delete {
+    background-color: orangered;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.bookdeets {
+
+    display: flexbox;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    max-height: 200px;
+    margin: 0 auto ;
+    display: block;
+}
+
+
+/* Form */
+
+.container {
+    /* display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    color: black;
+    max-height: 400px;
+    width: 400px;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    border: 3px solid black; */
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    width: 400px;    
+}
+
+.p{
+    background: whitesmoke;
+    right: 100px;
+    margin: auto;
+}
+
+input[type=text] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .read-status {
+      display: inline;
+  }
